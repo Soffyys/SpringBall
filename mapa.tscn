@@ -7,18 +7,25 @@
 size = Vector2(1154.5, 228)
 
 [node name="mapa" type="Node2D" unique_id=1414533759]
-position = Vector2(69, -169)
+position = Vector2(-1079, -258)
+scale = Vector2(117.87384, 202.49554)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1816074327]
+position = Vector2(0, 3.0517578e-05)
+scale = Vector2(0.99999994, 0.99999994)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=403384207]
-position = Vector2(578.75, 174)
+position = Vector2(553.78467, 111.40953)
+scale = Vector2(1, 0.99999994)
 shape = SubResource("RectangleShape2D_70f7c")
 
-[node name="Icon" type="Sprite2D" parent="StaticBody2D" unique_id=391516174]
-position = Vector2(154, -54.000004)
-scale = Vector2(0.31509587, 0.22152668)
+[node name="Icon" type="Sprite2D" parent="." unique_id=391516174]
+position = Vector2(152.25359, -54.76064)
+scale = Vector2(0.31509584, 0.22152667)
 texture = ExtResource("1_70f7c")
 
 [node name="CharacterBody2D" parent="." unique_id=1468154598 instance=ExtResource("2_70f7c")]
-position = Vector2(572, -60)
+position = Vector2(572, -60.00003)
+scale = Vector2(0.99999994, 0.99999994)
+
+[node name="Sprite2D2" type="Sprite2D" parent="CharacterBody2D" unique_id=863080547]

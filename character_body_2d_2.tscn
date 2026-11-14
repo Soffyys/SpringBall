@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://bp1ty4wo4ck42"]
+
+[ext_resource type="Texture2D" uid="uid://051iva3uqmik" path="res://red-ball-cartoon-vector-removebg-preview.png" id="1_4bjlw"]
+
+[sub_resource type="GDScript" id="GDScript_bwlx4"]
+script/source = "extends CharacterBody2D
+
+func _physics_process(delta):
+	var input_direction = Input.get_vector(\"ui_left\", \"ui_right\", \"ui_up\", \"ui_down\")
+	velocity = input_direction * 400
+	move_and_slide()
+"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_25806"]
+radius = 199.2511
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1626888250]
+script = SubResource("GDScript_bwlx4")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=936336875]
+texture = ExtResource("1_4bjlw")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1469163187]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1999598181]
+shape = SubResource("CircleShape2D_25806")
