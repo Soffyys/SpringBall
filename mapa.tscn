@@ -1,12 +1,13 @@
 [gd_scene format=3 uid="uid://dtupmjn3h17y6"]
 
-[ext_resource type="Texture2D" uid="uid://c1tp7pqe622b5" path="res://icon.svg" id="1_2jh14"]
+[ext_resource type="Texture2D" uid="uid://051iva3uqmik" path="res://red-ball-cartoon-vector-removebg-preview.png" id="1_70f7c"]
 [ext_resource type="PackedScene" uid="uid://duwe2tngv1nck" path="res://character_body_2d.tscn" id="2_70f7c"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_70f7c"]
 size = Vector2(1154.5, 228)
 
 [node name="mapa" type="Node2D" unique_id=1414533759]
+position = Vector2(69, -169)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1816074327]
 
@@ -15,9 +16,9 @@ position = Vector2(578.75, 174)
 shape = SubResource("RectangleShape2D_70f7c")
 
 [node name="Icon" type="Sprite2D" parent="StaticBody2D" unique_id=391516174]
-position = Vector2(573.50006, 171.99997)
-scale = Vector2(8.929687, 1.7656255)
-texture = ExtResource("1_2jh14")
+position = Vector2(154, -54.000004)
+scale = Vector2(0.31509587, 0.22152668)
+texture = ExtResource("1_70f7c")
 
 [node name="CharacterBody2D" parent="." unique_id=1468154598 instance=ExtResource("2_70f7c")]
-position = Vector2(581, -31)
+position = Vector2(572, -60)
